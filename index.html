@@ -3,47 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ludmila Paula Ramirez | Portafolio Profesional</title>
+    <title>Ludmila Paula Ramirez | Portafolio Técnico</title>
     <style>
-        /* Estilos básicos para que se vea ordenado y moderno */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             color: #333;
-            max-width: 800px;
+            max-width: 850px;
             margin: 0 auto;
             padding: 20px;
-            background-color: #f9f9f9;
+            background-color: #f4f6f9;
         }
         header {
             text-align: center;
-            padding: 40px 0;
+            padding: 40px 20px;
             background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-            margin-bottom: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            margin-bottom: 25px;
         }
-        h1 { margin: 0; color: #2c3e50; }
-        .subtitle { color: #7f8c8d; font-size: 1.2em; margin-top: 5px; }
+        h1 { margin: 0; color: #1a2a3a; font-size: 2.2em; }
+        .subtitle { color: #3498db; font-size: 1.2em; font-weight: 600; margin-top: 8px; }
+        .tagline { color: #7f8c8d; font-style: italic; margin-top: 5px; }
         section {
             background: #fff;
-            padding: 25px;
-            margin-bottom: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            padding: 30px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
         }
-        h2 { color: #2980b9; border-bottom: 2px solid #ecf0f1; padding-bottom: 10px; }
-        .project-card {
-            background: #f8f9fa;
-            border-left: 4px solid #2980b9;
-            padding: 15px;
+        h2 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 8px; margin-top: 0; }
+        .tech-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
             margin-top: 15px;
-            border-radius: 0 4px 4px 0;
         }
+        .tech-badge {
+            background: #e8f4fd;
+            color: #2980b9;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: bold;
+        }
+        .project-card {
+            background: #fafbfc;
+            border-left: 5px solid #3498db;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 0 8px 8px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+        }
+        .project-card h3 { margin-top: 0; color: #2c3e50; }
         .links a {
             display: inline-block;
-            margin: 10px 15px 10px 0;
-            color: #2980b9;
+            margin-right: 20px;
+            color: #3498db;
             text-decoration: none;
             font-weight: bold;
         }
@@ -54,32 +70,45 @@
 
     <header>
         <h1>Ludmila Paula Ramirez</h1>
-        <div class="subtitle">Estudiante de Programación & Emprendedora</div>
+        <div class="subtitle">Desarrolladora Full Stack en Formación</div>
+        <div class="tagline">Estudiante de Tecnología | Orientada a la Resolución de Problemas</div>
     </header>
 
     <section id="sobre-mi">
         <h2>Sobre Mí</h2>
-        <p>¡Hola! Bienvenidos a mi rincón digital. Actualmente me encuentro en plena formación en el mundo del desarrollo de software, explorando el potencial de la tecnología para resolver problemas reales y crear soluciones innovadoras.</p>
-        <p>Esta página fue creada para la materia de Emprendedurismo, con el objetivo de consolidar mis proyectos, ideas de negocio y habilidades técnicas en un solo lugar.</p>
+        <p>¡Hola! Soy estudiante de la Tecnicatura en Programación. Me apasiona explorar cómo el software y la tecnología pueden optimizar tareas cotidianas y resolver problemas reales. Mi enfoque está en aprender las bases lógicas firmes necesarias para construir soluciones eficientes y escalables.</p>
+        <p>Fuera de las pantallas, disfruto de la natación y tengo un gran interés por el estudio de idiomas (con bases en inglés y actualmente fascinada por el desafío lógico del Chino Mandarín). Considero que la constancia de los idiomas y el deporte complementan perfectamente mi perfil analítico en sistemas.</p>
+    </section>
+
+    <section id="tecnologias">
+        <h2>Tecnologías & Herramientas</h2>
+        <p>Tecnologías académicas y de investigación propia con las que trabajo actualmente:</p>
+        <div class="tech-container">
+            <span class="tech-badge">SQL / Bases de Datos</span>
+            <span class="tech-badge">Git & GitHub</span>
+            <span class="tech-badge">JavaScript (En curso)</span>
+            <span class="tech-badge">Python (Bases)</span>
+            <span class="tech-badge">Automatización de Procesos</span>
+        </div>
     </section>
 
     <section id="proyectos">
-        <h2>Mis Proyectos</h2>
+        <h2>Proyectos Destacados</h2>
         
         <div class="project-card">
-            <h3>Proyecto 1: Idea de Negocio / Emprendimiento</h3>
-            <p>Descripción breve de la propuesta de valor, el problema que resuelve y a qué público está dirigido. (¡Acá podés meter lo que estés armando en la materia!).</p>
+            <h3>Sistema de Gestión de Biblioteca</h3>
+            <p><strong>Proyecto Académico:</strong> Desarrollo de un sistema lógico para la administración, control de stock y registro de socios de una biblioteca. Este proyecto destaca mi experiencia en el trabajo colaborativo con Git, control de versiones, asignación de tareas y resolución de conflictos en ramas (branches).</p>
         </div>
 
         <div class="project-card">
-            <h3>Proyecto 2: Desarrollos Técnicos</h3>
-            <p>Espacio para destacar tus repositorios de código más importantes, landing pages o lógica de backend en la que hayas trabajado.</p>
+            <h3>Automatizaciones & IoT (Investigación Propia)</h3>
+            <p>Desarrollo de scripts de prueba orientados a la automatización de notificaciones independientes, incluyendo la integración de bots de Telegram para alertas de eventos de usuarios. Adicionalmente, exploro la lógica aplicada a hardware y robótica básica mediante simulaciones de control de accesos.</p>
         </div>
     </section>
 
     <section id="contacto">
-        <h2>Contacto</h2>
-        <p>Si querés conocer más sobre mis proyectos o conectar profesionalmente, podés encontrarme en:</p>
+        <h2>Conectemos</h2>
+        <p>Podés ver mis repositorios de código, redes profesionales o escribirme directamente:</p>
         <div class="links">
             <a href="https://github.com/lud-hash" target="_blank">GitHub</a>
             <a href="#" target="_blank">LinkedIn</a>
